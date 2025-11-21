@@ -2,7 +2,7 @@ After finding `.php` files try get by Base64 encode , Other wise file will be ex
 
 - Before
 - http://10.10.10.84/browse.php?file=ini.php
-- ![[3.webp]]
+<img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/3.webp" width="100%" />
 - 
 ## LFI2RCE via phpinfo()
 
@@ -12,10 +12,10 @@ After finding `.php` files try get by Base64 encode , Other wise file will be ex
 - To exploit this vulnerability you need: A LFI vulnerability, a page where phpinfo() is displayed, "file_uploads = on" and the server has to be able to write in the "/tmp" directory.
 
 - `file_uploads` Should be ON
-![[4.webp]]
+![[4.webp]] <img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/4.webp" width="100%" />
 - Open burpSuite and captcha the Request
 
-![[6.webp]]
+![[6.webp]] <img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/6.webp" width="100%" />
 - change to POST Request
 - Before
 ```
@@ -67,7 +67,7 @@ Content-Type: application/php
 
 - Then u will see this `Variables`
 
-![[7.webp]]
+![[7.webp] <img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/7.webp" width="100%" />
 - Use `code_1` or `code_2`
 - Change `IP:PORT`
 - Change GET parameter `/browse.php?file=%s` or similar
@@ -78,12 +78,12 @@ Content-Type: application/php
     ```
 
 
-![[8.webp]]
+![[8.webp]]<img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/8.webp" width="100%" />
 ```
 nc -nlvp 443
 ```
 
-![[9.webp]]
+![[9.webp]] <img src="https://github.com/CracksoftShlok/Ouroboros/blob/main/Images/9.webp" width="100%" />
 #### Code_1
 Working on `Python3`
 
